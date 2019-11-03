@@ -1,0 +1,13 @@
+{
+  "name": "avalanche",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "marp slides/main.md -o docs/index.html"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^0.15.0"
+  }
+}
