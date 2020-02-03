@@ -108,7 +108,7 @@ marp: true
 
 ---
 
-![h:700](../images/slush_protocol.png)
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/slush_protocol.png)
 
 ---
 
@@ -134,7 +134,7 @@ marp: true
 
 ---
 
-![h:700](../images/snowflake_protocol.png)
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/snowflake_protocol.png)
 
 ---
 
@@ -149,7 +149,7 @@ marp: true
 
 ---
 
-![h:700](../images/snowball_protocol.png)
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/snowball_protocol.png)
 
 ---
 
@@ -178,7 +178,7 @@ marp: true
 
 ---
 
-![h:700](../images/avalanche_protocol.png)
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/avalanche_protocol.png)
 
 ---
 
@@ -192,7 +192,7 @@ marp: true
 
 ---
 
-![h:700](../images/avalanche_dag.png)
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/avalanche_dag.png)
 
 ---
 
