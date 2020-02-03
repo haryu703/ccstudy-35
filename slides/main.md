@@ -108,6 +108,10 @@ marp: true
 
 ---
 
+![h:700](../images/slush_protocol.png)
+
+---
+
 - 利点
   - 省メモリ
   - コミュニケーション対象のノードが少ない
@@ -130,6 +134,10 @@ marp: true
 
 ---
 
+![h:700](../images/snowflake_protocol.png)
+
+---
+
 ## 2.4. Snowball: Adding Confidence
 
 - Snowflake の拡張
@@ -138,6 +146,10 @@ marp: true
 - 色の出現回数が片方を上回ったら自分の色を更新する
   - 更新するだけで、受け入れは Snowflake と同じ
 - 攻撃耐性の強化だけでなく、プロトコルに一般化しやすくなる
+
+---
+
+![h:700](../images/snowball_protocol.png)
 
 ---
 
@@ -166,6 +178,10 @@ marp: true
 
 ---
 
+![h:700](../images/avalanche_protocol.png)
+
+---
+
 ## 2.6. Avalanche: Specification
 
 - $\mathcal T_u$ ... ノード$u$が持つ全てのトランザクションのセット
@@ -173,6 +189,10 @@ marp: true
 - $T' \leftarrow T$ ... $T$は$T'$の親トランザクション
 - $T' \xleftarrow{*} T$ ... $T$は$T'$の先祖トランザクション
 - Avalance は Bitcoin と同様に、トランザクションの確定はしない
+
+---
+
+![h:700](../images/avalanche_dag.png)
 
 ---
 
@@ -271,7 +291,7 @@ marp: true
 
 ---
 
-## 3.6. Livenes
+## 3.6. Liveness
 
 ### Slush
 
@@ -496,19 +516,23 @@ marp: true
 ---
 
 # Bitcoin Cash で提案されている使用方法
+
 ## Pre-Consensus
-- 0-confのトランザクションを安全にする
-- 2つのトランザクションの衝突を防ぎたい
-- 直近100ブロックをマイニングしたノードが投票者となり、Avalancheプロトコルでトランザクションを確定する
+
+- 0-conf のトランザクションを安全にする
+- 2 つのトランザクションの衝突を防ぎたい
+- 直近 100 ブロックをマイニングしたノードが投票者となり、Avalanche プロトコルでトランザクションを確定する
 - ネットワークに衝突するトランザクションがなければ今までと全て同じ
-- 無効と判定されたトランザクションをマイニングするとブロックがorphanされる
+- 無効と判定されたトランザクションをマイニングするとブロックが orphan される
 - 非マイニングノードには関係ない
 
 ---
+
 ## Post-Consensus
-- reorg攻撃耐性にAvalancheを使う
-- 現状のBitcoin ABCは、10ブロック以上のreorgを拒否するようになっている
-- その代わりに、Avalancheでreorgの拒否に関してノード間で合意を取る
+
+- reorg 攻撃耐性に Avalanche を使う
+- 現状の Bitcoin ABC は、10 ブロック以上の reorg を拒否するようになっている
+- その代わりに、Avalanche で reorg の拒否に関してノード間で合意を取る
 
 ---
 
