@@ -12,6 +12,16 @@ marp: true
 
 [haryu703](https://twitter.com/haryu703)
 
+興味
+- Bitcoin Cash
+- Rust
+
+---
+# Snowflake to Avalanche: A Novel Metastable Consensus Protocol Family for Cryptocurrencies
+- Team Rocket
+- t-rocket@protonmail.com
+- Revision: 05/16/2018 21:51:26 UTC
+
 ---
 
 # Abstract
@@ -46,7 +56,7 @@ marp: true
     - $k$ はセキュリティパラメータ
   - ただし、トランザクションの「正しさ」は保証される必要がある
     - 暗号資産の場合、発行者は署名で保証されている
-    - Double Spend はありうるが、大きな影響はない（？）
+    - 不正なトランザクションが発行されても安全性に影響はない
 
 ---
 
@@ -80,7 +90,7 @@ marp: true
   - $\mathcal B$ ... 不正ノード
 - Bitcoin の UTXO モデルで考える
   - 不正なトランザクションは署名によって防がれる
-  - 競合するトランザクションは発行できる（二重支払い）
+  - 衝突するトランザクションは発行できる（二重支払い）
     - $\mathcal C$は発行しないけど$\mathcal B$は発行する
 - Avalanche は以下の保証を高確率で保証する
   - Safety ... 競合するトランザクションを受け入れる 2 つの$\mathcal C$がない
@@ -92,7 +102,7 @@ marp: true
 
 ## 2.2. Slush: Introducing Metastability
 
-- ビザンチン・フォールトトレラント性はないが、この後のプロトコルの説明に役立つ
+- non-Byzantine protocolだが、この後のプロトコルの説明に役立つ
 - 競合するトランザクションを「Red(R)」と「Blue(B)」の 2 色に置き換えて説明する
   - 初期状態は無色
 
@@ -162,7 +172,7 @@ marp: true
   - 一つの頂点への投票が暗黙的に頂点までのパス全てへの投票になる
 - セキュリティ面
   - 過去の決定を取り消しづらくなる
-- 言葉の定義
+- 定義
   - $ancestor\ set$ ... トランザクションの全ての先祖トランザクション
   - $progeny$ ... トランザクションの全ての子孫トランザクション
 - 「トランザクションの衝突」はアプリケーション次第
@@ -319,8 +329,8 @@ marp: true
   - Eventually good ancestry
     - トランザクションは親を変更してリトライできる
   - Sufficient chits
-    - ノードは、正しいトランザクションに nop トランザクションを子孫として発行する
-    - 決定された親を持つ正しいトランザクションが十分な$chit$を受け取るために必要
+    - 正しいトランザクションに nop トランザクションを子孫として発行する
+    - 決定された親を持つ正しいトランザクションが、十分な$chit$を受け取るために必要
     - nop トランザクション
       - アプリケーションに副作用がない
       - どのノードからも発行できる
@@ -537,8 +547,10 @@ marp: true
 ---
 
 # 参考資料など
-
+- 論文
 https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYwrRVGV
+- Pre-Consensus
 https://medium.com/@chrispacia/avalanche-pre-consensus-making-zeroconf-secure-ddedec254339
+- Post-Consensus
 https://medium.com/@Mengerian/avalanche-post-consensus-making-bitcoin-cash-indestructible-2464b1ae0382
 https://www.avalabs.org/
