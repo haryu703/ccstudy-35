@@ -192,6 +192,14 @@ marp: true
 
 ---
 
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/avalanche_tx_gen.png)
+
+---
+
+![h:700](https://raw.githubusercontent.com/haryu703/ccstudy-35/master/images/avalanche_voting.png)
+
+---
+
 ## 2.6. Avalanche: Specification
 
 - $\mathcal T_u$ ... ノード$u$が持つ全てのトランザクションのセット
